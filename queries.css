@@ -184,3 +184,9 @@
     row-gap: 12rem;
   }
 }
+
+@media (max-width: 500px) {
+  .heading-secondary {
+    font-size: 3.5rem;
+  }
+}
