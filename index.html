@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lipowa Zagroda - Jazda konna w wyjątkowym miejscu!</title>
+
+    <link href="./styles.css" rel="stylesheet" />
+    <link href="./queries.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><ion-icon class="btn-icon" name="caret-up-outline"></ion-icon>
+    </button>
+    <header class="header">
+            <!-- MOBILE HAMBURGER -->
+            <div class="hamburger">
+              <div class="line line1"></div>
+              <div class="line line2"></div>
+              <div class="line line3"></div>
+            </div>
+            <!-- MOBILE HAMBURGER END -->
+      <!-- CTA -->
+      <video src="./img/wideo.mp4" muted loop autoplay></video>
+      <div class="video-overlay"></div>
+      <div class="cta-container">
+        <!-- MENU NAV -->
+        <nav class="navigation">
+          <div class="menu">
+            <div class="menu-option">
+              <img class="menu-logo" src="./img/logo.png" />
+            </div>
+            <div class="menu-option">
+              <a class="menu-option" ref="#">Start</a>
+            </div>
+            <div class="menu-option"><a href="#about">O nas</a></div>
+            <div class="menu-option"><a href="#horses">Konie</a></div>
+            <div class="menu-option"><a href="#oferta">Oferta</a></div>
+            <div class="menu-option"><a href="#opinie">Opinie</a></div>
+            <div class="menu-option"><a href="#galeria">Galeria</a></div>
+            <div class="menu-option"><a href="#kontakt">Kontakt</a></div>
+          </div>
+        </nav>
+
+        <!-- MENU NAV END -->
+        <div class="cta-heading-box">
+          <h1 class="cta-heading">
+            Jazda konna<br />
+            w <span class="cta-heading--span">wyjątkowym</span><br />miejscu!
+          </h1>
+          <button class="btn btn-cta">Sprawdź!</button>
+        </div>
+      </div>
+
+      <!-- CTA END-->
+    </header>
+
+    <main>
+      <section id="1" class="logo-heading animationup">
+        <div>
+          <img src="./img/logo.png" class="logo-break " alt="logo" />
+        </div>
+      </section>
+
+      <section id="about" class="about margin-bottom background-section-1 animationup">
+        <div class="grid-2-cols container">
+          <div class="about-imgs">
+            <img src="./img/about1.jpg" class="about-img-1" alt="horse" />
+            <img
+              src="./img/about2.jpg"
+              class="about-img-2"
+              alt="horse and woman"
+            />
+            <img src="./img/about3.jpg" class="about-img-3" alt="young horse" />
+          </div>
+          <div class="about-txt">
+            <h2 class="heading-secondary">Lipowa Zagroda</h2>
+            <h3 class="heading-tertiary">
+              Uśmiech i zadowolenie naszych Gości stanowią dla nas największą
+              nagrodę za wykonywaną pracę.
+            </h3>
+            <p class="about-paragraph">
+              Lipowa Zagroda jest stajnią położoną w malowniczej miejscowości
+              Lipowa, oddalonej o 10 km od Strzelina. Tutaj każdy miłośnik koni
+              i jeździectwa może znaleźć coś dla siebie, ponieważ oferujemy
+              szeroką gamę usług. Piękne otoczenie stajni zachęca do przejażdżek
+              w teren, natomiast nowoczesny, duży oraz bezpieczny plac umożliwia
+              przyjemną jazdę również na terenie ośrodka. Dysponujemy
+              nowoczesnym sprzętem dopasowanym do naszych koni, jak i
+              spełniającym najwyższe wymagania klientów. W naszej stajni
+              prowadzone będą darmowe zajęcia edukacyjne dotyczące szerokiego
+              spektrum zagadnień związanych z jeździectwem, behawiorem oraz
+              hodowlą koni. Cenimy sobie komfort klientów i przyjazną atmosferę.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="horses"  class="konie margin-bottom background-section-2 animationup">
+        <div class="grid-1-cols">
+          <div class="horses-txt">
+            <h2 class="heading-secondary flex">
+              <img
+                class="icon-heading"
+                src="./img/icons/headings-icon-left.png"
+                alt=" "
+              />Nasze Konie<img
+                class="icon-heading"
+                src="./img/icons/headings-icon-right.png"
+                alt=" "
+              />
+            </h2>
+            <h3 class="heading-tertiary flex">
+              Duszą każdej stadniny są oczywiście jej mieszkańcy - oto nasi
+              podopieczni
+            </h3>
+            <!-- KONIE -->
+            <div class="horses-container">
+              <!-- segment -->
+              <div class="horses-imgs">
+                <img
+                  src="./img/about1.jpg"
+                  alt="horse portrait"
+                  class="horse-1"
+                />
+                <div class="horses-overlay">
+                  <h2 class="horses-overlay-heading">
+                    <img src="./img/icons/horse-head.png" class="icon-1" />
+                    Nazwa konia
+                  </h2>
+                  <ul class="horses-overlay-stats">
+                    <li class="horse-overlay-stats-flex">
+                      <img
+                        src="./img/icons/horseshoe.png"
+                        class="icon-1"
+                      />Płeć: Płeć
+                    </li>
+                    <li class="horse-overlay-stats-flex">
+                      <img
+                        src="./img/icons/horseshoe.png"
+                        class="icon-1"
+                      />Wiek: 12 lat
+                    </li>
+                    <li class="horse-overlay-stats-flex">
+                      <img
+                        src="./img/icons/horseshoe.png"
+                        class="icon-1"
+                      />Cechy: Lorem ipsum dolor sit amet.
+                    </li>
+                    <li class="horse-overlay-stats-flex">
+                      Lorem ipsum dolor, sit amet consectetur
+                      adipisicing elit. Repellendus, ad!
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- drugi koń -->
+              <div class="horses-imgs">
+                <img
+                  src="./img/horse1.jpg"
+                  alt="horse portrait"
+                  class="horse-1"
+                />
+                <div class="horses-overlay">
+                  <h2 class="horses-overlay-heading">
+                    <img src="./img/icons/horse-head.png" class="icon-1" />
+                    Koń #2
+                  </h2>
+                  <ul class="horses-overlay-stats">
+                    <li class="horse-overlay-stats-flex">
+                      <img
+                        src="./img/icons/horseshoe.png"
+                        class="icon-1"
+                      />Płeć: Płeć
+                    </li>
+                    <li class="horse-overlay-stats-flex">
+                      <img
+                        src="./img/icons/horseshoe.png"
+                        class="icon-1"
+                      />Wiek: 12 lat
+                    </li>
+                    <li class="horse-overlay-stats-flex">
+                      <img
+                        src="./img/icons/horseshoe.png"
+                        class="icon-1"
+                      />Cechy: Lorem ipsum dolor sit amet.
+                    </li>
+                    <li class="horse-overlay-stats-flex">
+                      Lorem ipsum dolor, sit amet consectetur
+                      adipisicing elit. Repellendus, ad!
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- koniec segmentu -->
+              <div class="horses-imgs">
+                <img
+                  src="./img/horse2.jpg"
+                  alt="horse portrait"
+                  class="horse-1"
+                />
+                <div class="horses-overlay">
+                  <h2 class="horses-overlay-heading">
+                    <img src="./img/icons/horse-head.png" class="icon-1" />
+                    Koń #
+                  </h2>
+                  <ul class="horses-overlay-stats">
+                    <li class="horse-overlay-stats-flex">
+                      <img
+                        src="./img/icons/horseshoe.png"
+                        class="icon-1"
+                      />Płeć: Płeć
+                    </li>
+                    <li class="horse-overlay-stats-flex">
+                      <img
+                        src="./img/icons/horseshoe.png"
+                        class="icon-1"
+                      />Wiek: 12 lat
+                    </li>
+                    <li class="horse-overlay-stats-flex">
+                      <img
+                        src="./img/icons/horseshoe.png"
+                        class="icon-1"
+                      />Cechy: Lorem ipsum dolor sit amet.
+                    </li>
+                    <li class="horse-overlay-stats-flex">
+                      Lorem ipsum dolor, sit amet consectetur
+                      adipisicing elit. Repellendus, ad!
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- segment koniec -->
+              <div class="horses-imgs">
+                <img
+                  src="./img/horse3.jpg"
+                  alt="horse portrait"
+                  class="horse-1"
+                />
+                <div class="horses-overlay">
+                  <h2 class="horses-overlay-heading">
+                    <img src="./img/icons/horse-head.png" class="icon-1" />
+                    Koń #
+                  </h2>
+                  <ul class="horses-overlay-stats">
+                    <li class="horse-overlay-stats-flex">
+                      <img
+                        src="./img/icons/horseshoe.png"
+                        class="icon-1"
+                      />Płeć: Płeć
+                    </li>
+                    <li class="horse-overlay-stats-flex">
+                      <img
+                        src="./img/icons/horseshoe.png"
+                        class="icon-1"
+                      />Wiek: 12 lat
+                    </li>
+                    <li class="horse-overlay-stats-flex">
+                      <img
+                        src="./img/icons/horseshoe.png"
+                        class="icon-1"
+                      />Cechy: Lorem ipsum dolor sit amet.
+                    </li>
+                    <li class="horse-overlay-stats-flex">
+                      Lorem ipsum dolor, sit amet consectetur
+                      adipisicing elit. Repellendus, ad!
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- drugi koń -->
+              <div class="horses-imgs">
+                <img
+                  src="./img/horse4.jpg"
+                  alt="horse portrait"
+                  class="horse-1"
+                />
+                <div class="horses-overlay">
+                  <h2 class="horses-overlay-heading">
+                    <img src="./img/icons/horse-head.png" class="icon-1" />
+                    Koń #
+                  </h2>
+                  <ul class="horses-overlay-stats">
+                    <li class="horse-overlay-stats-flex">
+                      <img
+                        src="./img/icons/horseshoe.png"
+                        class="icon-1"
+                      />Płeć: Płeć
+                    </li>
+                    <li class="horse-overlay-stats-flex">
+                      <img
+                        src="./img/icons/horseshoe.png"
+                        class="icon-1"
+                      />Wiek: 12 lat
+                    </li>
+                    <li class="horse-overlay-stats-flex">
+                      <img
+                        src="./img/icons/horseshoe.png"
+                        class="icon-1"
+                      />Cechy: Lorem ipsum dolor sit amet.
+                    </li>
+                    <li class="horse-overlay-stats-flex">
+                      Lorem ipsum dolor, sit amet consectetur
+                      adipisicing elit. Repellendus, ad!
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- koniec segmentu -->
+              <div class="horses-imgs">
+                <img
+                  src="./img/horse5.jpg"
+                  alt="horse portrait"
+                  class="horse-1"
+                />
+                <div class="horses-overlay">
+                  <h2 class="horses-overlay-heading">
+                    <img src="./img/icons/horse-head.png" class="icon-1" />
+                   Koń #
+                  </h2>
+                  <ul class="horses-overlay-stats">
+                    <li class="horse-overlay-stats-flex">
+                      <img
+                        src="./img/icons/horseshoe.png"
+                        class="icon-1"
+                      />Płeć: Płeć
+                    </li>
+                    <li class="horse-overlay-stats-flex">
+                      <img
+                        src="./img/icons/horseshoe.png"
+                        class="icon-1"
+                      />Wiek: 12 lat
+                    </li>
+                    <li class="horse-overlay-stats-flex">
+                      <img
+                        src="./img/icons/horseshoe.png"
+                        class="icon-1"
+                      />Cechy: Lorem ipsum dolor sit amet.
+                    </li>
+                    <li class="horse-overlay-stats-flex">
+                      Lorem ipsum dolor, sit amet consectetur
+                      adipisicing elit. Repellendus, ad!
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- segment koniec -->
+            </div>
+            <!-- KONIEC KONI -->
+          </div>
+        </div>
+      </section>
+
+      <section id="oferta" class="about margin-bottom background-section-1 animationup">
+        <h2 class="flex heading-secondary">
+          <img
+            class="icon-heading"
+            src="./img/icons/headings-icon-left.png"
+            alt=" "
+          />Oferta<img
+            class="icon-heading"
+            src="./img/icons/headings-icon-right.png"
+            alt=" "
+          />
+        </h2>
+        <!--1 karta oferty start -->
+        <div class="grid-2-cols container offer-grid">
+          <div class="offer-imgs">
+            <img class="offer-img" src="./img/cta.jpg" alt=" " />
+          </div>
+
+          <div class="offer-txt">
+            <h3 class="offer-heading-secondary">Czas trwania: 1 godzina</h3>
+            <h2 class="offer-heading">Oprowadzania</h2>
+            <ul class="offer-list">
+              <li class="offer-list-li">
+                <img src="./img/icons/horseshoe.png" class="icon icon-offer" />
+                Dla osób, które nie miały okazji jeździć konno
+              </li>
+              <li class="offer-list-li">
+                <img
+                  src="./img/icons/horseshoe.png"
+                  class="icon icon-offer"
+                />Lorem ipsum dolor sit amet.
+              </li>
+              <li class="offer-list-li">
+                <img src="./img/icons/horseshoe.png" class="icon icon-offer" />
+                Iusto molestiae nesciunt, repudiandae delectus commodi
+              </li>
+              <li class="offer-list-li">
+                <img src="./img/icons/horseshoe.png" class="icon icon-offer" />
+                hic asperiores quam nam adipisci possimus minus harum nostrum
+              </li>
+            </ul>
+            <button class="btn btn-offer">Umów!</button>
+          </div>
+        </div>
+        <!--2 karta oferty start -->
+        <div class="grid-2-cols container offer-grid">
+          <div class="offer-txt">
+            <h3 class="offer-heading-secondary">Czas trwania: 1 godzina</h3>
+            <h2 class="offer-heading">Jazda na lonży</h2>
+            <ul class="offer-list">
+              <li class="offer-list-li">
+                <img src="./img/icons/horseshoe.png" class="icon icon-offer" />
+                Dla osób, które nie miały okazji jeździć konno
+              </li>
+              <li class="offer-list-li">
+                <img
+                  src="./img/icons/horseshoe.png"
+                  class="icon icon-offer"
+                />Lorem ipsum dolor sit amet.
+              </li>
+              <li class="offer-list-li">
+                <img src="./img/icons/horseshoe.png" class="icon icon-offer" />
+                Iusto molestiae nesciunt, repudiandae delectus commodi
+              </li>
+              <li class="offer-list-li">
+                <img src="./img/icons/horseshoe.png" class="icon icon-offer" />
+                hic asperiores quam nam adipisci possimus minus harum nostrum
+              </li>
+            </ul>
+            <button class="btn btn-offer">Umów!</button>
+          </div>
+
+          <div class="offer-imgs grid-order--1">
+            <img class="offer-img" src="./img/offer3.jpg" alt=" " />
+          </div>
+        </div>
+        <div class="grid-2-cols container offer-grid">
+          <div class="offer-imgs">
+            <img class="offer-img" src="./img/offer2.jpg" alt=" " />
+          </div>
+
+          <div class="offer-txt">
+            <h3 class="offer-heading-secondary">Czas trwania: 1 godzina</h3>
+            <h2 class="offer-heading">Jazda indywidualna</h2>
+            <ul class="offer-list">
+              <li class="offer-list-li">
+                <img src="./img/icons/horseshoe.png" class="icon icon-offer" />
+                Dla osób, które nie miały okazji jeździć konno
+              </li>
+              <li class="offer-list-li">
+                <img
+                  src="./img/icons/horseshoe.png"
+                  class="icon icon-offer"
+                />Lorem ipsum dolor sit amet.
+              </li>
+              <li class="offer-list-li">
+                <img src="./img/icons/horseshoe.png" class="icon icon-offer" />
+                Iusto molestiae nesciunt, repudiandae delectus commodi
+              </li>
+              <li class="offer-list-li">
+                <img src="./img/icons/horseshoe.png" class="icon icon-offer" />
+                hic asperiores quam nam adipisci possimus minus harum nostrum
+              </li>
+            </ul>
+            <button class="btn btn-offer">Umów!</button>
+          </div>
+        </div>
+        <!-- karta oferty start -->
+        <div class="grid-2-cols container offer-grid">
+          <div class="offer-txt">
+            <h3 class="offer-heading-secondary">Czas trwania: 1 godzina</h3>
+            <h2 class="offer-heading">Jazda w terenie</h2>
+            <ul class="offer-list">
+              <li class="offer-list-li">
+                <img src="./img/icons/horseshoe.png" class="icon icon-offer" />
+                Dla osób, które nie miały okazji jeździć konno
+              </li>
+              <li class="offer-list-li">
+                <img
+                  src="./img/icons/horseshoe.png"
+                  class="icon icon-offer"
+                />Lorem ipsum dolor sit amet.
+              </li>
+              <li class="offer-list-li">
+                <img src="./img/icons/horseshoe.png" class="icon icon-offer" />
+                Iusto molestiae nesciunt, repudiandae delectus commodi
+              </li>
+              <li class="offer-list-li">
+                <img src="./img/icons/horseshoe.png" class="icon icon-offer" />
+                hic asperiores quam nam adipisci possimus minus harum nostrum
+              </li>
+            </ul>
+            <button class="btn btn-offer">Umów!</button>
+          </div>
+
+          <div class="offer-imgs grid-order--1">
+            <img class="offer-img" src="./img/offer1.jpg" alt=" " />
+          </div>
+        </div>
+      </section>
+
+      <!-- testimonials section -->
+
+      <section
+        id="opinie"
+        class="opinie margin-bottom background-section-opinie animationup"
+      >
+        <!-- heading -->
+        <h2 class="flex heading-secondary">
+          <img
+            class="icon-heading"
+            src="./img/icons/headings-icon-left.png"
+            alt=" "
+          />Opinie<img
+            class="icon-heading"
+            src="./img/icons/headings-icon-right.png"
+            alt=" "
+          />
+        </h2>
+        <!-- heading -->
+        <div class="testimonials-box container margin-bottom">
+          <div id="opinie" class="testimonial">
+            <img 
+              class="testimonial-photo"
+              src="./img/testimonials/testimonial-1.jpg"
+              alt="123"
+            />
+            <h2 class="testimonial-heading">Komboj Słoneczko</h2>
+            <p class="testimonial-paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
+              officia libero quidem quos iure eveniet nulla, illo consequuntur
+              modi iste, vel ab? Voluptatum fuga quae dolorem placeat officiis
+              earum excepturi reiciendis quia assumenda, libero vel corrupti,
+              sapiente temporibus repellendus quis nulla modi nesciunt, cumque
+              illum ea dolores dolor minima. Esse?
+            </p>
+            <div class="rating">
+              <ion-icon class="rating-star" name="star"></ion-icon>
+              <ion-icon class="rating-star" name="star"></ion-icon>
+              <ion-icon class="rating-star" name="star"></ion-icon>
+              <ion-icon class="rating-star" name="star"></ion-icon>
+              <ion-icon class="rating-star" name="star"></ion-icon>
+            </div>
+          </div>
+          <div class="testimonial">
+            <img
+              class="testimonial-photo"
+              src="./img/testimonials/testimonial-2.jpg"
+              alt="123"
+            />
+            <h2 class="testimonial-heading">Ojosław</h2>
+            <p class="testimonial-paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
+              officia libero quidem quos iure eveniet nulla, illo consequuntur
+              modi iste, vel ab? Voluptatum fuga quae dolorem placeat officiis
+              earum excepturi reiciendis quia assumenda, libero vel corrupti,
+              sapiente temporibus repellendus quis nulla modi nesciunt, cumque
+              illum ea dolores dolor minima. Esse?
+            </p>
+            <div class="rating">
+              <ion-icon class="rating-star" name="star"></ion-icon>
+              <ion-icon class="rating-star" name="star"></ion-icon>
+              <ion-icon class="rating-star" name="star"></ion-icon>
+              <ion-icon class="rating-star" name="star"></ion-icon>
+              <ion-icon class="rating-star" name="star"></ion-icon>
+            </div>
+          </div>
+          <div class="testimonial">
+            <img
+              class="testimonial-photo"
+              src="./img/testimonials/testimonial-3.jpg"
+              alt="123"
+            />
+            <h2 class="testimonial-heading">Arthur Morgan</h2>
+            <p class="testimonial-paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
+              officia libero quidem quos iure eveniet nulla, illo consequuntur
+              modi iste, vel ab? Voluptatum fuga quae dolorem placeat officiis
+              earum excepturi reiciendis quia assumenda, libero vel corrupti,
+              sapiente temporibus repellendus quis nulla modi nesciunt, cumque
+              illum ea dolores dolor minima. Esse?
+            </p>
+            <div class="rating">
+              <ion-icon class="rating-star" name="star"></ion-icon>
+              <ion-icon class="rating-star" name="star"></ion-icon>
+              <ion-icon class="rating-star" name="star"></ion-icon>
+              <ion-icon class="rating-star" name="star"></ion-icon>
+              <ion-icon class="rating-star" name="star"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="galeria"
+        class="gallery margin-bottom background-section-gallery container animationup"
+      >
+        <h2 class="flex heading-secondary">
+          <img
+            class="icon-heading"
+            src="./img/icons/headings-icon-left.png"
+            alt=" "
+          />Galeria<img
+            class="icon-heading"
+            src="./img/icons/headings-icon-right.png"
+            alt=" "
+          />
+        </h2>
+        <!-- galeria -->
+        <div class="gallery-box">
+          <div class="gallery-grid">
+            <div class="gallery-img">
+              <img
+                src="./img/gallery/Gallery1.jpg"
+                alt="Horse testimonial-photo"
+              />
+            </div>
+            <div class="gallery-img">
+              <img
+                src="./img/gallery/Gallery2.jpg"
+                alt="Horse testimonial-photo"
+              />
+            </div>
+            <div class="gallery-img">
+              <img
+                src="./img/gallery/Gallery3.jpg"
+                alt="Horse testimonial-photo"
+              />
+            </div>
+            <div class="gallery-img">
+              <img
+                src="./img/gallery/Gallery4.jpg"
+                alt="Horse testimonial-photo"
+              />
+            </div>
+            <div class="gallery-img">
+              <img
+                src="./img/gallery/Gallery5.jpg"
+                alt="Horse testimonial-photo"
+              />
+            </div>
+            <div class="gallery-img">
+              <img
+                src="./img/gallery/Gallery6.jpg"
+                alt="Horse testimonial-photo"
+              />
+            </div>
+            <div class="gallery-img">
+              <img
+                src="./img/gallery/Gallery7.jpg"
+                alt="Horse testimonial-photo"
+              />
+            </div>
+            <div class="gallery-img">
+              <img
+                src="./img/gallery/Gallery8.jpg"
+                alt="Horse testimonial-photo"
+              />
+            </div>
+            <div class="gallery-img">
+              <img
+                src="./img/gallery/Gallery9.jpg"
+                alt="Horse testimonial-photo"
+              />
+            </div>
+            <div class="gallery-img">
+              <img
+                src="./img/gallery/Gallery10.jpg"
+                alt="Horse testimonial-photo"
+              />
+            </div>
+            <div class="gallery-img">
+              <img
+                src="./img/gallery/Gallery11.jpg"
+                alt="Horse testimonial-photo"
+              />
+            </div>
+            <div class="gallery-img">
+              <img
+                src="./img/gallery/Gallery12.jpg"
+                alt="Horse testimonial-photo"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contant -->
+      <footer
+      id="kontakt"
+      class="contact margin-bottom background-section-gallery container"
+    >
+
+      <div class="contact-box">
+        <div class="contact-grid">
+          <div class="contact-map">
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1262.6357362563135!2d16.98623573656651!3d50.733453624066144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x18a34315d6e45a0!2zNTDCsDQ0JzAxLjAiTiAxNsKwNTknMTIuMyJF!5e0!3m2!1spl!2spl!4v1644953316066!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="contact-adress">
+            <address class="contact-adress-flexbox">
+              <h3 class=contact-heading>Lipowa Zagroda</h3>
+              <span class="contact-span">ul. Lipowa 123 <br />Lipowa <br /> Kontakt: 123 123 123</span>
+            </address>
+          </div>
+          <div class="contact-socials">
+            <div class="social-flexbox">
+              <a class=footer-icon" href="#"><ion-icon class="footer-icon" name="logo-instagram"></ion-icon></a>
+              <a class=footer-icon" href="#"><ion-icon class="footer-icon" name="logo-facebook"></ion-icon></a>
+              <a class=footer-icon" href="#"><ion-icon class="footer-icon" name="logo-youtube"></ion-icon></a>
+              <a class=footer-icon" href="#"><ion-icon class="footer-icon" name="chatbox-outline"></ion-icon></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="copyrights-box">   <span class="copyrights">Copyrights MA</span></div>
+   
+      </footer>
+    </main>
+  </body>
+</html>
